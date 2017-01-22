@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Bookmarklets</title>
+</head>
+<body>
+<p>The following are bookmarklets; that is, they're not files to be clicked on and run. Instead, they're for dragging to your bookmarks/favorites bar and running from there. See Chapter 17, "Bookmarklets," for more details about installation and on bookmarklets in general.</p>
+<a href="javascript:alert('Hello World');">Script 01</a><br />
+
+<a href="javascript:void(document.bgColor='#FFFFFF');">Script 02</a><br />
+
+<a href="javascript:var nuStyle=document.createElement('link');nuStyle.rel='stylesheet';nuStyle.href='data:text/css,* {background:#FFF !important; color:#000 !important} :link {color:#00F !important} :visited {color:#93C !important}';void(document.documentElement.childNodes[0].appendChild(nuStyle));">Script 03</a><br />
+
+<a href="javascript:var i,j,k,l,t='<table width=100%>',c=new Array('00','33','66','99','CC','FF');for(i=0;i<6;i++){for(j=0;j<6;j++){t+='<tr>';for(k=0;k<6;k++){l=c[i]+c[j]+c[k];t+='<td bgcolor=#'+l+'>'+l+'</td>'}t+='</tr>'}}void(document.body.innerHTML=t+'</table>');">Script 04</a><br />
+
+<a href="javascript:var inText=window.getSelection()+'';if(!inText){inText=prompt('Word:','')};if(inText){void(window.open('http://www.dictionary.com/cgi-bin/dict.pl?db=*&term='+escape(inText)+'&x=13&y=11','dictWin','width=650,height=600,left=75,top=175,scrollbars=yes'));}">Script 05</a><br />
+
+<a href="javascript:inText=document.selection.createRange().text;if(!inText){inText=prompt('Word:','')};if(inText){void(window.open('http://www.dictionary.com/cgi-bin/dict.pl?db=*&term='+escape(inText)+'&x=13&y=11','dictWin','width=650,height=600,left=75,top=175'));}">Script 06</a><br />
+
+<a href="javascript:var inText=window.getSelection()+'';if(!inText){inText=prompt('Word:','')}if(inText){void(window.open('http://www.thesaurus.com/cgi-bin/search?config=roget&words='+escape(inText),'thesWin','width=650,height=600,left=75,top=175,scrollbars=yes'));}">Script 07</a><br />
+
+<a href="javascript:var imgWin,i,outText='',di=document.images;for (i=0;i<di.length;i++){if(outText.indexOf(di[i].src)<0){outText+='<tr><td><img src='+di[i].src+' /></td><td>'+di[i].height+'</td><td>'+di[i].width+'</td><td>'+di[i].src+'</td></tr>'}};if(outText==''){alert('No images!');}else{imgWin=window.open('','IW','width=800,height=600,scrollbars=yes');void(imgWin.document.body.innerHTML='<table border=1 cellpadding=10><tr><th>Image</th><th>Height</th><th>Width</th><th>URL</th></tr>'+outText+'</table>');}">Script 08</a><br />
+
+<a href="javascript:var i,j,w,t='',v=new Array('a','A','e','E','i','I','o','O','u','U'),s=new Array('grave','acute','uml','circ');for(i=0;i<10;i++){for(j=0;j<4;j++){w=v[i]+s[j];t+='&'+w+' is &'+'amp;'+w+';<br />';}}void(document.body.innerHTML=t);">Script 09</a><br />
+
+<a href="javascript:var s,i,n,h='',x='0123456789ABCDEF',c=prompt('R,G,B:','');if(c){s=c.split(',');for(i=0;i<3;i++){n=parseInt(s[i]);h+=x.charAt(n>>4)+x.charAt(n&15)}void(prompt('Hexcolor:','#'+h))}else{void(null);}">Script 10</a><br />
+
+<a href="javascript:var expr=prompt('Length in kilometers:','');if(isNaN(parseFloat(expr))){alert(expr+' is not a number')}else{alert('Length in miles is '+Math.round(expr*6214)/10000);}">Script 11</a><br />
+
+<a href="javascript:var evl,em,expr=prompt('Formula...(eg: 2*3 + 7/8)','');with(Math)try{evl=parseFloat(eval(expr));if(isNaN(evl)){throw Error('Not a number!');}void(prompt('Result:',evl));}catch(em){alert(em);}">Script 12</a><br />
+
+<a href="javascript:void(window.open('http://validator.w3.org/check?uri='+window.location.href,'','width=800,height=900,status=yes,resizable=yes,scrollbars=yes,location=yes'));">Script 13</a>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body {
+	background-color: #000;
+}
+
+#leftfore, #mover, #rightfore {
+	position: absolute;
+	top: 5px;
+}
+
+#leftfore {
+	left: 0;
+	z-index: 2;
+}
+
+#mover {
+	left: 5px;
+	z-index: 1;
+}
+
+#rightfore {
+	left: 470px;
+	z-index: 2;
+}

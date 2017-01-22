@@ -1,0 +1,51 @@
+body {
+	background-color: white;
+	color: black;
+	font-family: "Trebuchet MS", verdana, helvetica, arial, sans-serif;
+	font-size: 0.9em;
+	background-image: url(images/shakespeare.gif);
+	background-repeat: no-repeat;
+	background-position: 20px 80px;
+}
+img {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.character {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+div.character {
+	margin: 1.5em 0em 1em 17em;
+}
+.directions {
+	font-style: italic;
+}
+.dialog, .directions {
+	margin-left: 22em;
+}
+.directions .character {
+	font-size: 1.4em;
+}
+#week2 {
+	background-color: #FFFF00;
+}
+a {
+	text-decoration: none;
+	padding: 5px 10px 5px 10px;
+}
+a:link {
+	color: #0000FF;
+}
+a:visited {
+	color: #000000;
+}
+a:hover {
+	color: #FFFFFF;
+	background-color: #000000;
+	text-decoration: underline;
+}
+a:active {
+	color: #FF0000;
+}

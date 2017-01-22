@@ -1,0 +1,23 @@
+Notes on file naming:
+	Script 16.1  is script01.html
+	Script 16.2  is script01.css
+	Script 16.3  is script01.js
+	Script 16.4  is script02.html
+	Script 16.5  is script02.css
+	Script 16.6  is script02.js
+	Script 16.7  is script03.html
+	Script 16.8  is script03.css
+	Script 16.9  is script03.js
+	Script 16.10 is script04.html
+	Script 16.11 is script04.css
+	Script 16.12 is script04.js
+	Script 16.13 is script05.html
+	Script 16.14 is script05.js
+	Script 16.15 is script06.html
+	Script 16.16 is script06.js
+
+
+¥ The file script03.html has been changed to refer to script03.css and script03.js rather than script02a.css and script02a.js, respectively.
+¥ The file script04.html has been changed to refer to script04.css and script04.js rather than script03.css and script03.js, respectively.
+¥ The file script05.html has been changed to refer to script04.css and script05.js rather than script03.css and script04.js, respectively.
+¥ The file script06.html has been changed to refer to script04.css and script06.js rather than script03.css and script05.js, respectively.

@@ -1,0 +1,30 @@
+#sel1 {
+	position: absolute;
+	left: 148px;
+	top: 75px;
+}
+
+#sel2 {
+	position: absolute;
+	left: 303px;
+	top: 75px;
+}
+
+#selMonth1, #selDay1, #selMonth2, #selDay2 {
+	vertical-align: middle;
+}
+
+#dateLink1, #dateLink2 {
+	vertical-align: middle;
+	margin: 5px;
+}
+
+#container1, #container2 {
+	position: absolute;
+	display: none;
+}
+
+h1 {
+	font-size: 1.5em;
+	margin: 50px 0 0 50px;
+}
